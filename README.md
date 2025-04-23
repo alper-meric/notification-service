@@ -44,6 +44,26 @@ This service is responsible for sending notifications to users based on subscrip
 mvn clean package
 ```
 
+## Local Development Setup
+
+1. First, start the subscription-service:
+```bash
+cd ../subscription-service
+docker-compose up -d
+```
+
+2. Secondly, start the payment service:
+```bash
+cd ../payment-service
+docker-compose up -d
+```
+
+2. Then start the notification service:
+```bash
+cd ../notification-service
+docker-compose up -d
+```
+
 ## Running with Docker
 
 ```bash
